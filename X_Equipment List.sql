@@ -1,7 +1,7 @@
 USE [StatureDev]
 GO
 
-/****** Object:  View [dbo].[X_Equipment List]    Script Date: 9/5/2025 2:43:46 PM ******/
+/****** Object:  View [dbo].[X_Equipment List]    Script Date: 9/5/2025 2:56:27 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -97,7 +97,7 @@ SELECT  [ROW_ID]
       ,[U_Abbr__Doc__Name_]
       ,[R_Abbr__Doc__Name_]
       ,[U_Document_Link___Attachment]
-      ,[R_Document_Link___Attachment] FROM [StatureDev].[dbo].[X_Equip List_Site_publish_new]
+      ,[R_Document_Link___Attachment] FROM [StatureDev].[dbo].[X_Equip List_Site_publish_new] where U_Unit_Operation is not null
 union
 SELECT  [ROW_ID]
       ,[VERSION_ID]
@@ -124,7 +124,7 @@ SELECT  [ROW_ID]
       ,[U_Abbr__Doc__Name_]
       ,[R_Abbr__Doc__Name_]
       ,[U_Document_Link___Attachment]
-      ,[R_Document_Link___Attachment] FROM [StatureDev].[dbo].[X_Equip List_Site_draft_new] 
+      ,[R_Document_Link___Attachment] FROM [StatureDev].[dbo].[X_Equip List_Site_draft_new] where U_Unit_Operation is not null
 GO
 
 
