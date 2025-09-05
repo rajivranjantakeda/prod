@@ -18,16 +18,10 @@ GO
 
 CREATE   view [dbo].[X_Process Attributes PPI Sel]
 AS 
-SELECT * FROM [StatureDev].[dbo].[X_ProcAttrPPISelGlbl_pub]
+SELECT * FROM [StatureDev].[dbo].[X_ProcAttrPPISelGlbl]
 
 union
-SELECT * FROM [StatureDev].[dbo].[X_ProcAttrPPISelGlbl_rel]
-
-union
-SELECT * FROM [StatureDev].[dbo].[X_ProcAttrPPISelSite_pub]
-
-union
-SELECT * FROM [StatureDev].[dbo].[X_ProcAttrPPISelSite_dft]
+SELECT * FROM [StatureDev].[dbo].[X_ProcAttrPPISelSite]
 
 GO
 

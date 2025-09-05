@@ -18,13 +18,11 @@ GO
 
 CREATE view [dbo].[X_Process Description QA PPI]
 AS
-SELECT * FROM [StatureDev].[dbo].[X_ProcDescQAPPIGlbl_pub] where C_Parameter_Type in ('PP','EC','MC','RM','MA','IA')
+SELECT * FROM [StatureDev].[dbo].[X_ProcDescQAPPIGlbl] where C_Parameter_Type in ('PP','EC','MC','RM','MA','IA')
+
 union 
-SELECT * FROM [StatureDev].[dbo].[X_ProcDescQAPPIGlbl_rel] where C_Parameter_Type in ('PP','EC','MC','RM','MA','IA')
-union 
-SELECT * FROM [StatureDev].[dbo].[X_Pro Des QA PPI Site_pub] where C_Parameter_Type in ('PP','EC','MC','RM','MA','IA')
-union 
-SELECT * FROM [StatureDev].[dbo].[X_Pro Des QA PPI Site_dft] where C_Parameter_Type in ('PP','EC','MC','RM','MA','IA')
+SELECT * FROM [StatureDev].[dbo].[X_Pro Des QA PPI Site] where C_Parameter_Type in ('PP','EC','MC','RM','MA','IA')
+
 GO
 
 
