@@ -14,12 +14,15 @@ GO
 
 
 
-
 CREATE   view [dbo].[X_Site Information]
 AS
 select * from [StatureDev].[dbo].[X_Site Info_Global_pub]
 union
 select * from [StatureDev].[dbo].[X_Site Info_Global_rel]
+union
+select * from [StatureDev].[dbo].[X_Site Info_Site_pub]
+union
+select * from [StatureDev].[dbo].[X_Site Info_Site_dft]
 
 GO
 
