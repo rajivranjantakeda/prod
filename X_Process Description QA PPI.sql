@@ -1,7 +1,7 @@
 USE [StatureDev]
 GO
 
-/****** Object:  View [dbo].[X_Process Description QA PPI]    Script Date: 9/5/2025 2:46:58 PM ******/
+/****** Object:  View [dbo].[X_Process Description QA PPI]    Script Date: 9/5/2025 2:54:37 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -232,7 +232,7 @@ SELECT [ROW_ID]
       ,[R_Conf_]
       ,[C_Applicability]
       ,[U_Applicability]
-      ,[R_Applicability] FROM [StatureDev].[dbo].[X_Pro Des QA PPI Site_pub_new] where C_Parameter_Type in ('PP','EC','MC','RM','MA','IA')
+      ,[R_Applicability] FROM [StatureDev].[dbo].[X_Pro Des QA PPI Site_pub_new] where C_Parameter_Type in ('PP','EC','MC','RM','MA','IA') and U_Unit_Operation is not null
 union 
 SELECT [ROW_ID]
       ,[VERSION_ID]
@@ -304,7 +304,7 @@ SELECT [ROW_ID]
       ,[R_Conf_]
       ,[C_Applicability]
       ,[U_Applicability]
-      ,[R_Applicability] FROM [StatureDev].[dbo].[X_Pro Des QA PPI Site_dft_new] where C_Parameter_Type in ('PP','EC','MC','RM','MA','IA')
+      ,[R_Applicability] FROM [StatureDev].[dbo].[X_Pro Des QA PPI Site_dft_new] where C_Parameter_Type in ('PP','EC','MC','RM','MA','IA') and U_Unit_Operation is not null
 GO
 
 

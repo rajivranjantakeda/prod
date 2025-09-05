@@ -1,7 +1,7 @@
 USE [StatureDev]
 GO
 
-/****** Object:  View [dbo].[X_PCA Full View]    Script Date: 9/5/2025 2:45:47 PM ******/
+/****** Object:  View [dbo].[X_PCA Full View]    Script Date: 9/5/2025 2:56:03 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -205,7 +205,7 @@ SELECT [ROW_ID]
       ,[U_Comments_for_Study_Type]
       ,[R_Comments_for_Study_Type]
       ,[U_Send_To_PrCA]
-      ,[R_Send_To_PrCA] FROM [StatureDev].[dbo].[X_PCA Full View_Site_pub_new]
+      ,[R_Send_To_PrCA] FROM [StatureDev].[dbo].[X_PCA Full View_Site_pub_new] where U_Unit_Operation is not null
 union
 SELECT [ROW_ID]
       ,[VERSION_ID]
@@ -268,7 +268,7 @@ SELECT [ROW_ID]
       ,[U_Comments_for_Study_Type]
       ,[R_Comments_for_Study_Type]
       ,[U_Send_To_PrCA]
-      ,[R_Send_To_PrCA] FROM [StatureDev].[dbo].[X_PCA FULL View_Site_draft]
+      ,[R_Send_To_PrCA] FROM [StatureDev].[dbo].[X_PCA FULL View_Site_draft] where U_Unit_Operation is not null
 GO
 
 
