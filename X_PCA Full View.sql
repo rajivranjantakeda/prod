@@ -1,4 +1,4 @@
-USE [StatureDev]
+USE [StatureProdQbD]
 GO
 
 /****** Object:  View [dbo].[X_PCA Full View]    Script Date: 9/5/2025 2:45:47 PM ******/
@@ -79,7 +79,7 @@ SELECT [ROW_ID]
       ,[U_Comments_for_Study_Type]
       ,[R_Comments_for_Study_Type]
       ,[U_Send_To_PrCA]
-      ,[R_Send_To_PrCA] FROM [StatureDev].[dbo].[X_PCA FULL Global_publish_new]
+      ,[R_Send_To_PrCA] FROM [StatureProdQbD].[dbo].[X_PCA FULL Global_publish_new]
 union
 SELECT [ROW_ID]
       ,[VERSION_ID]
@@ -142,7 +142,7 @@ SELECT [ROW_ID]
       ,[U_Comments_for_Study_Type]
       ,[R_Comments_for_Study_Type]
       ,[U_Send_To_PrCA]
-      ,[R_Send_To_PrCA] FROM [StatureDev].[dbo].[X_PCA FULL Global_released_new]
+      ,[R_Send_To_PrCA] FROM [StatureProdQbD].[dbo].[X_PCA FULL Global_released_new]
 union
 SELECT [ROW_ID]
       ,[VERSION_ID]
@@ -205,7 +205,7 @@ SELECT [ROW_ID]
       ,[U_Comments_for_Study_Type]
       ,[R_Comments_for_Study_Type]
       ,[U_Send_To_PrCA]
-      ,[R_Send_To_PrCA] FROM [StatureDev].[dbo].[X_PCA Full View_Site_pub_new]
+      ,[R_Send_To_PrCA] FROM [StatureProdQbD].[dbo].[X_PCA Full View_Site_pub_new]
 union
 SELECT [ROW_ID]
       ,[VERSION_ID]
@@ -268,7 +268,7 @@ SELECT [ROW_ID]
       ,[U_Comments_for_Study_Type]
       ,[R_Comments_for_Study_Type]
       ,[U_Send_To_PrCA]
-      ,[R_Send_To_PrCA] FROM [StatureDev].[dbo].[X_PCA FULL View_Site_draft]
+      ,[R_Send_To_PrCA] FROM [StatureProdQbD].[dbo].[X_PCA FULL View_Site_draft]
 GO
 
 
