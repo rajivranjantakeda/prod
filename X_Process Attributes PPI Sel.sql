@@ -1,4 +1,4 @@
-USE [StatureDev]
+USE [StatureProdQbD]
 GO
 
 /****** Object:  View [dbo].[X_Process Attributes PPI Sel]    Script Date: 9/5/2025 2:55:41 PM ******/
@@ -55,7 +55,7 @@ SELECT [ROW_ID]
       ,[U_Site_Limits]
       ,[R_Site_Limits]
       ,[U_Applicability]
-      ,[R_Applicability] FROM [StatureDev].[dbo].[X_ProcAttrPPISelGlbl_pub_new]
+      ,[R_Applicability] FROM [StatureProdQbD].[dbo].[X_ProcAttrPPISelGlbl_pub_new]
 
 union
 SELECT [ROW_ID]
@@ -95,7 +95,7 @@ SELECT [ROW_ID]
       ,[U_Site_Limits]
       ,[R_Site_Limits]
       ,[U_Applicability]
-      ,[R_Applicability] FROM [StatureDev].[dbo].[X_ProcAttrPPISelGlbl_pub_new]
+      ,[R_Applicability] FROM [StatureProdQbD].[dbo].[X_ProcAttrPPISelGlbl_pub_new]
 union
 SELECT [ROW_ID]
       ,[VERSION_ID]
@@ -134,7 +134,7 @@ SELECT [ROW_ID]
       ,[U_Site_Limits]
       ,[R_Site_Limits]
       ,[U_Applicability]
-      ,[R_Applicability] FROM [StatureDev].[dbo].[X_ProAttrPPISelSite_pub_new] where U_Unit_Operation is not null
+      ,[R_Applicability] FROM [StatureProdQbD].[dbo].[X_ProAttrPPISelSite_pub_new] where U_Unit_Operation is not null
 union
 SELECT [ROW_ID]
       ,[VERSION_ID]
@@ -173,7 +173,7 @@ SELECT [ROW_ID]
       ,[U_Site_Limits]
       ,[R_Site_Limits]
       ,[U_Applicability]
-      ,[R_Applicability] FROM [StatureDev].[dbo].[X_ProAttrPPISelSite_rel_new] where U_Unit_Operation is not null
+      ,[R_Applicability] FROM [StatureProdQbD].[dbo].[X_ProAttrPPISelSite_rel_new] where U_Unit_Operation is not null
 GO
 
 

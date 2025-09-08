@@ -1,4 +1,4 @@
-USE [StatureDev]
+USE [StatureProdQbD]
 GO
 
 /****** Object:  View [dbo].[X_PTP-IPC]    Script Date: 9/5/2025 2:48:00 PM ******/
@@ -82,7 +82,7 @@ SELECT [ROW_ID]
       ,[U_Send_to_Action_Plan_]
       ,[R_Send_to_Action_Plan_]
       ,[U_References003]
-      ,[R_References003] FROM [StatureDev].[dbo].[X_PTP-IPC_global_pub_new]
+      ,[R_References003] FROM [StatureProdQbD].[dbo].[X_PTP-IPC_global_pub_new]
 union
 SELECT [ROW_ID]
       ,[VERSION_ID]
@@ -149,7 +149,7 @@ SELECT [ROW_ID]
       ,[U_Send_to_Action_Plan_]
       ,[R_Send_to_Action_Plan_]
       ,[U_References003]
-      ,[R_References003] FROM [StatureDev].[dbo].[X_PTP-IPC_global_rel_new]
+      ,[R_References003] FROM [StatureProdQbD].[dbo].[X_PTP-IPC_global_rel_new]
 union
 SELECT [ROW_ID]
       ,[VERSION_ID]
@@ -216,7 +216,7 @@ SELECT [ROW_ID]
       ,[U_Send_to_Action_Plan_]
       ,[R_Send_to_Action_Plan_]
       ,[U_References003]
-      ,[R_References003] FROM [StatureDev].[dbo].[X_PTP - IPC_Sit_publish_new]
+      ,[R_References003] FROM [StatureProdQbD].[dbo].[X_PTP - IPC_Sit_publish_new]
 union
 SELECT [ROW_ID]
       ,[VERSION_ID]
@@ -283,7 +283,7 @@ SELECT [ROW_ID]
       ,[U_Send_to_Action_Plan_]
       ,[R_Send_to_Action_Plan_]
       ,[U_References003]
-      ,[R_References003] FROM [StatureDev].[dbo].[X_PTP-IPC_Site_draft_new]
+      ,[R_References003] FROM [StatureProdQbD].[dbo].[X_PTP-IPC_Site_draft_new]
 GO
 
 

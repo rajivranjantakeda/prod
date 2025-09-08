@@ -1,4 +1,4 @@
-USE [StatureDev]
+USE [StatureProdQbD]
 GO
 
 /****** Object:  View [dbo].[X_Site Information]    Script Date: 9/5/2025 2:50:02 PM ******/
@@ -34,7 +34,7 @@ select [ROW_ID]
       ,[U_Site_Abbr]
       ,[R_Site_Abbr]
       ,[U_Product_Code]
-      ,[R_Product_Code] from [StatureDev].[dbo].[X_Site Info_Global_pub_new]
+      ,[R_Product_Code] from [StatureProdQbD].[dbo].[X_Site Info_Global_pub_new]
 union 
 select [ROW_ID]
       ,[VERSION_ID]
@@ -53,7 +53,7 @@ select [ROW_ID]
       ,[U_Site_Abbr]
       ,[R_Site_Abbr]
       ,[U_Product_Code]
-      ,[R_Product_Code] from [StatureDev].[dbo].[X_Site Info_Global_rel_new]
+      ,[R_Product_Code] from [StatureProdQbD].[dbo].[X_Site Info_Global_rel_new]
 
 union 
 select [ROW_ID]
@@ -73,7 +73,7 @@ select [ROW_ID]
       ,[U_Site_Abbr]
       ,[R_Site_Abbr]
       ,[U_Product_Code]
-      ,[R_Product_Code] from [StatureDev].[dbo].[X_Site Info_Site_publish_new]
+      ,[R_Product_Code] from [StatureProdQbD].[dbo].[X_Site Info_Site_publish_new]
 union 
 select [ROW_ID]
       ,[VERSION_ID]
@@ -92,7 +92,7 @@ select [ROW_ID]
       ,[U_Site_Abbr]
       ,[R_Site_Abbr]
       ,[U_Product_Code]
-      ,[R_Product_Code] from [StatureDev].[dbo].[X_Site Info_Site_draft_new]
+      ,[R_Product_Code] from [StatureProdQbD].[dbo].[X_Site Info_Site_draft_new]
 GO
 
 

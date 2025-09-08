@@ -1,4 +1,4 @@
-USE [StatureDev]
+USE [StatureProdQbD]
 GO
 
 /****** Object:  View [dbo].[X_ACS QAs]    Script Date: 9/5/2025 2:43:18 PM ******/
@@ -60,7 +60,7 @@ select [ROW_ID]
       ,[U_Scaled_Risk_to_Patient_Score]
       ,[R_Scaled_Risk_to_Patient_Score]
       ,[U_Applicability]
-      ,[R_Applicability] from [StatureDev].[dbo].[X_ACS - QAs Global_rel_new] where "C_Criticality_Assignment"='CQA' OR "C_Send_Non_CQA_to_Assay_RO___"='Y' 
+      ,[R_Applicability] from [StatureProdQbD].[dbo].[X_ACS - QAs Global_rel_new] where "C_Criticality_Assignment"='CQA' OR "C_Send_Non_CQA_to_Assay_RO___"='Y' 
 union 
 select [ROW_ID]
       ,[VERSION_ID]
@@ -109,7 +109,7 @@ select [ROW_ID]
       ,[U_Scaled_Risk_to_Patient_Score]
       ,[R_Scaled_Risk_to_Patient_Score]
       ,[U_Applicability]
-      ,[R_Applicability] from [StatureDev].[dbo].[X_ACS - QAs Site_publish_new] where "C_Criticality_Assignment"='CQA' OR "C_Send_Non_CQA_to_Assay_RO___"='Y'
+      ,[R_Applicability] from [StatureProdQbD].[dbo].[X_ACS - QAs Site_publish_new] where "C_Criticality_Assignment"='CQA' OR "C_Send_Non_CQA_to_Assay_RO___"='Y'
 union
 select [ROW_ID]
       ,[VERSION_ID]
@@ -158,7 +158,7 @@ select [ROW_ID]
       ,[U_Scaled_Risk_to_Patient_Score]
       ,[R_Scaled_Risk_to_Patient_Score]
       ,[U_Applicability]
-      ,[R_Applicability] from [StatureDev].[dbo].[X_ACS - QAs Global_pub_new] where "C_Criticality_Assignment"='CQA' OR "C_Send_Non_CQA_to_Assay_RO___"='Y'
+      ,[R_Applicability] from [StatureProdQbD].[dbo].[X_ACS - QAs Global_pub_new] where "C_Criticality_Assignment"='CQA' OR "C_Send_Non_CQA_to_Assay_RO___"='Y'
 union
 select [ROW_ID]
       ,[VERSION_ID]
@@ -207,7 +207,7 @@ select [ROW_ID]
       ,[U_Scaled_Risk_to_Patient_Score]
       ,[R_Scaled_Risk_to_Patient_Score]
       ,[U_Applicability]
-      ,[R_Applicability] from [StatureDev].[dbo].[X_ACS - QAs Site_draft_new] where "C_Criticality_Assignment"='CQA' OR "C_Send_Non_CQA_to_Assay_RO___"='Y'
+      ,[R_Applicability] from [StatureProdQbD].[dbo].[X_ACS - QAs Site_draft_new] where "C_Criticality_Assignment"='CQA' OR "C_Send_Non_CQA_to_Assay_RO___"='Y'
 
 
 GO

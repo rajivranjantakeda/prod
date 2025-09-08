@@ -1,4 +1,4 @@
-USE [StatureDev]
+USE [StatureProdQbD]
 GO
 
 /****** Object:  View [dbo].[X_PTP-Raw Material]    Script Date: 9/5/2025 2:49:09 PM ******/
@@ -66,7 +66,7 @@ SELECT [ROW_ID]
       ,[U_Send_to_Action_Plan_]
       ,[R_Send_to_Action_Plan_]
       ,[U_References]
-      ,[R_References] FROM [StatureDev].[dbo].[X_PTP - Raw Mat_glbl_pub_new]
+      ,[R_References] FROM [StatureProdQbD].[dbo].[X_PTP - Raw Mat_glbl_pub_new]
 union
 SELECT [ROW_ID]
       ,[VERSION_ID]
@@ -117,7 +117,7 @@ SELECT [ROW_ID]
       ,[U_Send_to_Action_Plan_]
       ,[R_Send_to_Action_Plan_]
       ,[U_References]
-      ,[R_References] FROM [StatureDev].[dbo].[X_PTP - Raw Mat_glbl_rel_new]
+      ,[R_References] FROM [StatureProdQbD].[dbo].[X_PTP - Raw Mat_glbl_rel_new]
 union
 SELECT [ROW_ID]
       ,[VERSION_ID]
@@ -168,7 +168,7 @@ SELECT [ROW_ID]
       ,[U_Send_to_Action_Plan_]
       ,[R_Send_to_Action_Plan_]
       ,[U_References]
-      ,[R_References] FROM [StatureDev].[dbo].[X_PTP - Raw Mat_Site_pub_new]
+      ,[R_References] FROM [StatureProdQbD].[dbo].[X_PTP - Raw Mat_Site_pub_new]
 union
 SELECT [ROW_ID]
       ,[VERSION_ID]
@@ -219,7 +219,7 @@ SELECT [ROW_ID]
       ,[U_Send_to_Action_Plan_]
       ,[R_Send_to_Action_Plan_]
       ,[U_References]
-      ,[R_References] FROM [StatureDev].[dbo].[X_PTP-Raw Mat_Site_draft_new]
+      ,[R_References] FROM [StatureProdQbD].[dbo].[X_PTP-Raw Mat_Site_draft_new]
 GO
 
 
