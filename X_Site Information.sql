@@ -1,4 +1,4 @@
-USE [StatureDev]
+USE [StatureProdQbD]
 GO
 
 /****** Object:  View [dbo].[X_Site Information]    Script Date: 9/5/2025 2:15:40 PM ******/
@@ -12,12 +12,9 @@ GO
 
 
 
-
-
-
 CREATE   view [dbo].[X_Site Information]
 AS
-select * from [StatureDev].[dbo].[X_Site Info_Global]
+select * from [StatureProdQbD].[dbo].[X_Site Info_Global]
 
 GO
 

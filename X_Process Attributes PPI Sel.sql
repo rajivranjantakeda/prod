@@ -1,4 +1,4 @@
-USE [StatureDev]
+USE [StatureProdQbD]
 GO
 
 /****** Object:  View [dbo].[X_Process Attributes PPI Sel]    Script Date: 9/5/2025 2:13:04 PM ******/
@@ -18,10 +18,10 @@ GO
 
 CREATE   view [dbo].[X_Process Attributes PPI Sel]
 AS 
-SELECT * FROM [StatureDev].[dbo].[X_ProcAttrPPISelGlbl]
+SELECT * FROM [StatureProdQbD].[dbo].[X_ProcAttrPPISelGlbl]
 
 union
-SELECT * FROM [StatureDev].[dbo].[X_ProcAttrPPISelSite]
+SELECT * FROM [StatureProdQbD].[dbo].[X_ProcAttrPPISelSite]
 
 GO
 
